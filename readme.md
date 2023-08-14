@@ -1,6 +1,6 @@
 === Surge ===
-Contributors: kovshenin
-Donate link: https://github.com/kovshenin/surge
+Contributors: TopCodeBeast
+Donate link: https://github.com/TopCodeBeast/surge
 Tags: cache, performance, caching
 Requires at least: 5.7
 Tested up to: 6.0
@@ -47,10 +47,10 @@ Visit the Site Health screen under Tools in your WordPress dashboard. Common cac
 
 Below are a few common reasons:
 
-* You are logged into your WordPress site
-* You have a unique cookie set in your browser
-* A unique query parameter will also cause a cache miss, except common marketing parameters, such as utm_campaign, etc.
-* Request methods outside of GET and HEAD are not cached
+- You are logged into your WordPress site
+- You have a unique cookie set in your browser
+- A unique query parameter will also cause a cache miss, except common marketing parameters, such as utm_campaign, etc.
+- Request methods outside of GET and HEAD are not cached
 
 = Can I exclude page X from being cached? =
 
@@ -62,38 +62,44 @@ It seems like your hosting provider disabled the fpassthru() function, likely by
 
 = How can I support Surge? =
 
-If you like Surge, consider giving us a [star on GitHub](https://github.com/kovshenin/surge) and a review on WordPress.org.
+If you like Surge, consider giving us a [star on GitHub](https://github.com/BestDevFirst/surge) and a review on WordPress.org.
 
 == Changelog ==
 
 = 1.0.4 =
-* Add a WP-CLI command to invalidate/flush page cache
-* Fix redirect loop with Core's redirect_canonical for ignore_query_vars
-* Fix warnings for requests with empty headers
-* Fix warnings when cron cleanup attempts to read a file that no longer exists
-* Add a filter to disable writing to wp-config.php
+
+- Add a WP-CLI command to invalidate/flush page cache
+- Fix redirect loop with Core's redirect_canonical for ignore_query_vars
+- Fix warnings for requests with empty headers
+- Fix warnings when cron cleanup attempts to read a file that no longer exists
+- Add a filter to disable writing to wp-config.php
 
 = 1.0.3 =
-* Invalidate cache when posts_per_page is changed
-* Fix redirect loop with unknown query vars caused by Core's redirect_canonical
-* Ignore X-Cache and X-Powered-By headers from cache metadata
-* Allow multiple headers with the same name
+
+- Invalidate cache when posts_per_page is changed
+- Fix redirect loop with unknown query vars caused by Core's redirect_canonical
+- Ignore X-Cache and X-Powered-By headers from cache metadata
+- Allow multiple headers with the same name
 
 = 1.0.2 =
-* Fix PHP notice in invalidation
-* Protect against race conditions when writing flags.json
-* Add support for more post statuses in transition_post_status invalidation
+
+- Fix PHP notice in invalidation
+- Protect against race conditions when writing flags.json
+- Add support for more post statuses in transition_post_status invalidation
 
 = 1.0.1 =
-* Add support for custom user configuration
-* Various invalidation enhancements and fixes
-* Remove advanced-cache.php when plugin is deactivated
-* Add a note about fpassthru() in FAQ
-* Minor fix in Site Health screen tests
+
+- Add support for custom user configuration
+- Various invalidation enhancements and fixes
+- Remove advanced-cache.php when plugin is deactivated
+- Add a note about fpassthru() in FAQ
+- Minor fix in Site Health screen tests
 
 = 1.0.0 =
-* Anonymize requests to favicon.ico and robots.txt
-* Improve cache expiration, add cache expiration by path
+
+- Anonymize requests to favicon.ico and robots.txt
+- Improve cache expiration, add cache expiration by path
 
 = 0.1.0 =
-* Initial release
+
+- Initial release
